@@ -174,7 +174,7 @@ downloadAndCompile libedit-20160903-3.1 http://thrysoee.dk/editline/libedit-2016
 downloadAndCompile sqlite-autoconf-3170000 http://www.sqlite.org/2017/sqlite-autoconf-3170000.tar.gz "--with-libedit=$INSTALLDIR --with-ncurses=$INSTALLDIR"
 cp -r $INSTALLDIR/lib $HOME/lib
 
-git clone https://github.com/python/cpython.git
+git clone https://github.com/python/cpython.git --depth=1
 cd cpython
 ./configure --prefix=$INSTALLDIR
 make
